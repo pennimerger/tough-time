@@ -46,7 +46,7 @@ _car = car.get('model')
 print(_car)
 
 'B. a given object may appear in a  list more than once'
-'while that is true, other options are false.'
+'while that is true, all other options are false.'
 
 twitter_user1 = {
     'Username': 'Pennifuse',
