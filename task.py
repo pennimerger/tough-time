@@ -1,8 +1,8 @@
 #task0
 #converting celsius to farenheit
-celsius=20
-farenheit=(celsius*1.8)+32
-#print(f'The weather is {celsius}\N{DEGREE SIGN}C in UK but {farenheit}\N{DEGREE SIGN}F in the US and they tell the same temperature.')
+# celsius=20
+# farenheit=(celsius*1.8)+32
+# print(f'The weather is {celsius}\N{DEGREE SIGN}C in UK but {farenheit}\N{DEGREE SIGN}F in the US and they tell the same temperature.')
 
 #appending (...) to every number a user inputs.
 #user_0=float(input())
@@ -42,17 +42,17 @@ car = {
     'year': 1964
 }
 #using the 'get' method to print the value of the 'model' key of the car dictionary.
-_car = car.get('model')
-print(_car)
+# _car = car.get('model')
+# print(_car)
 
-'B. a given object may appear in a  list more than once'
-'while that is true, all other options are false.'
+# 'B. a given object may appear in a  list more than once'
+# 'while that is true, all other options are false.'
 
-twitter_user1 = {
-    'Username': 'Pennifuse',
-    'Year joined': 2017,
-    'Interests': 'Politics, Tech, Sports and Music',
-}
+# twitter_user1 = {
+#     'Username': 'Pennifuse',
+#     'Year joined': 2017,
+#     'Interests': 'Politics, Tech, Sports and Music',
+# }
 
 #task2
 #adds 1000 to any input > 1000
@@ -78,3 +78,59 @@ _long = len(sample_list)
  #   print('is equal to 6')
 #else:
     #print('Now we are talking.')
+
+#task 3
+# name = 'ifiok'
+# q = 0
+# while q < len(name):
+#     print(name[q])
+#     q += 1
+
+# alt = 'Enter items you intend to purchase below'
+# alt += "\nEnter 'stop' to exit"
+# prompt = ""
+# while prompt != 'stop':
+#     print(alt)
+#     prompt = input('- ')
+#     if prompt != 'stop':
+#         shopping_list = list(prompt.split(','))
+# print('You are buying:')
+# print(shopping_list)
+
+#task4
+def temp(farenheit):
+    celsius = (farenheit - 32) * 0.5556
+    print(f"\nIt's {farenheit}\N{DEGREE SIGN}F in US but {celsius}\N{DEGREE SIGN}C in the UK and they tell the same temperature.")
+
+temp(200)
+
+def refree():
+    print("\nYour refrees?")
+    #maximum of four refrees
+    x = 0
+    ref = {}
+    while x < 4:
+        col = input('Name: ')
+        rel = input('Relationship: ')
+        ref[rel] = col
+        x+=1
+    print('\nMy refrees are:')
+    for r,f in ref.items():
+        print(f'{r.title()}: {f.title()}')
+
+refree()
+
+def market_list():
+    alt = '\nEnter items you intend to purchase below'
+    alt += "\nEnter 'stop' to exit"
+    prompt = ""
+    while prompt != 'stop':
+        print(alt)
+        prompt = input('- ')
+        if prompt != 'stop':
+            shopping_list = list(prompt.split(','))
+    print('You are buying:')
+    return shopping_list
+
+item = market_list()
+print(item)
